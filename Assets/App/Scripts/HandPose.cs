@@ -36,8 +36,10 @@ namespace MRTK_HKSample
             if (handJointService != null)
             {
                 Transform jointTransform = handJointService.RequestJointTransform(TrackedHandJoint.Palm, Handedness.Right);
-                posText.text = jointTransform.position.ToString();
-                rotText.text = jointTransform.rotation.eulerAngles.ToString();
+                var p = jointTransform.position;
+                posText.text = "(" + p.x.ToString("F3") + ", " + p.y.ToString("F3") + ", " + p.z.ToString("F3") + ")";
+                var r = jointTransform.rotation.eulerAngles;
+                rotText.text = "(" + r.x.ToString("000") + ", " + r.y.ToString("000") + ", " + r.z.ToString("000") + ")";
             }
         }
     }
