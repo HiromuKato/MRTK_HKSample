@@ -6,7 +6,7 @@ using UnityEngine;
 namespace MRTK_HKSample
 {
     /// <summary>
-    /// 掌の位置・回転を取得するサンプル(実機でしか動作しないため注意)
+    /// 右掌の位置・回転を取得するサンプル(実機でしか動作しないため注意)
     /// 参考：https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html
     /// </summary>
     public class HandPose : MonoBehaviour
@@ -35,7 +35,7 @@ namespace MRTK_HKSample
 
             if (handJointService != null)
             {
-                Transform jointTransform = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Right);
+                Transform jointTransform = handJointService.RequestJointTransform(TrackedHandJoint.Palm, Handedness.Right);
                 posText.text = jointTransform.position.ToString();
                 rotText.text = jointTransform.rotation.eulerAngles.ToString();
             }
