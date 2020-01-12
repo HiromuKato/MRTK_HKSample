@@ -1,0 +1,12 @@
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs.meta
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll.meta
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT.dll.meta
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\System.Numerics.Vectors.dll.meta
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT.dll
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\System.Numerics.Vectors.dll
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csprojAssemblyReference.cache
+C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csproj.CopyComplete

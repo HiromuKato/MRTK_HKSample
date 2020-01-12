@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: HK
   productName: MRTK_HKSample
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -297,6 +297,10 @@ PlayerSettings:
     m_Devices:
     - Oculus
     - OpenVR
+  - m_BuildTarget: Metro
+    m_Enabled: 1
+    m_Devices:
+    - WindowsMR
   m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -531,7 +535,8 @@ PlayerSettings:
   webGLCompressionFormat: 1
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    14: DOTNETWINRT_PRESENT
   platformArchitecture:
     iOS: 1
   scriptingBackend: {}
@@ -545,14 +550,14 @@ PlayerSettings:
     '': 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template_3D
-  metroPackageVersion: 
+  metroPackageName: MRTKHKSample
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Template_3D
+  metroApplicationDescription: MRTK_HKSample
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -569,10 +574,51 @@ PlayerSettings:
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:
     WindowsStoreApps:
+      AllJoyn: False
+      Appointments: False
+      BackgroundMediaPlayback: False
+      BlockedChatMessages: False
+      Bluetooth: False
+      Chat: False
+      CodeGeneration: False
+      Contacts: False
+      EnterpriseAuthentication: False
+      HumanInterfaceDevice: False
+      InputInjectionBrokered: False
       InternetClient: True
+      InternetClientServer: False
+      Location: False
+      LowLevelDevices: False
       Microphone: True
+      MusicLibrary: False
+      Objects3D: False
+      OfflineMapsManagement: False
+      PhoneCall: False
+      PhoneCallHistoryPublic: False
+      PicturesLibrary: False
+      PointOfService: False
+      PrivateNetworkClientServer: False
+      Proximity: False
+      RecordedCallsFolder: False
+      RemoteSystem: False
+      RemovableStorage: False
+      SharedUserCertificates: False
       SpatialPerception: True
-  metroTargetDeviceFamilies: {}
+      SystemManagement: False
+      UserAccountInformation: False
+      UserDataTasks: False
+      UserNotificationListener: False
+      VideosLibrary: False
+      VoipCall: False
+      WebCam: False
+  metroTargetDeviceFamilies:
+    Desktop: False
+    Holographic: False
+    IoT: False
+    IoTHeadless: False
+    Mobile: False
+    Team: False
+    Xbox: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 

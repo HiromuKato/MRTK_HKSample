@@ -4,7 +4,6 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('$(NuGetPackageRoot)netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
     <Import Project="$(NuGetPackageRoot)msbuildforunity\0.8.3\build\MSBuildForUnity.targets" Condition="Exists('$(NuGetPackageRoot)msbuildforunity\0.8.3\build\MSBuildForUnity.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.windows.mixedreality.dotnetwinrt\0.5.1037\build\Microsoft.Windows.MixedReality.DotNetWinRT.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.mixedreality.dotnetwinrt\0.5.1037\build\Microsoft.Windows.MixedReality.DotNetWinRT.targets')" />
   </ImportGroup>
