@@ -552,7 +552,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: MRTKHKSample
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: HK
   metroCertificateIssuer: HK
