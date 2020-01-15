@@ -9,14 +9,18 @@ namespace MRTK_HKSample
     /// </summary>
     public class KeyboardSample : MonoBehaviour
     {
-        private TouchScreenKeyboard keyboard = null;
+        private TouchScreenKeyboard keyboard;
 
         [SerializeField]
         private TextMesh inputText;
 
+        [SerializeField]
+        private TextMesh debugText;
+
         void Start()
         {
             inputText.text = "";
+            debugText.text = "";
         }
 
         void Update()
@@ -33,7 +37,6 @@ namespace MRTK_HKSample
                         inputText.text = keyboard.text;
                     }
                     keyboard.active = false;
-                    keyboard = null;
                 }
                 else
                 {
@@ -45,7 +48,6 @@ namespace MRTK_HKSample
                     {
                         Debug.Log("keyboard : Not Visible");
                         keyboard.active = false;
-                        keyboard = null;
                     }
                 }
             }
@@ -56,11 +58,20 @@ namespace MRTK_HKSample
         /// </summary>
         public void ShowKeyboard()
         {
+            // キーボード表示中はボタンが反応しないようにしたいが、Unityのバグで現状キーボードの
+            // 正しい表示状態が取得できない
+            // https://issuetracker.unity3d.com/issues/hololens-touchscreenkeyboard-doesnt-report-correct-status-or-active-values
+            /*
+            if (TouchScreenKeyboard.visible)
+            {
+                return;
+            }
+            */
+
             if (keyboard != null)
             {
                 Debug.Log("keyboard : not null");
                 keyboard.active = false;
-                keyboard = null;
             }
 
             keyboard = TouchScreenKeyboard.Open(inputText.text, TouchScreenKeyboardType.EmailAddress);
@@ -76,8 +87,25 @@ namespace MRTK_HKSample
             if (keyboard != null)
             {
                 keyboard.active = false;
-                keyboard = null;
             }
         }
+
+        /// <summary>
+        /// キーボードの状態を表示する
+        /// </summary>
+        public void ShowKeyboardStatus()
+        {
+            debugText.text = "visible:" + TouchScreenKeyboard.visible.ToString();
+
+            if(keyboard != null)
+            {
+                debugText.text += "\nactive:" + keyboard.active + "\nstatus:" + keyboard.status;
+            }
+            else
+            {
+                debugText.text += "\nKeyboard is null";
+            }
+        }
+
     }
 }
