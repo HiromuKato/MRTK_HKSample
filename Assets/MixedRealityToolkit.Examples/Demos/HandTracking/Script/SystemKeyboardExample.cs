@@ -26,6 +26,9 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
         [SerializeField]
         private TextMeshPro debugMessage = null;
 
+        [SerializeField]
+        private TextMeshPro statusMessage = null;
+
 #pragma warning disable 0414
         [SerializeField]
         private MixedRealityKeyboardPreview mixedRealityKeyboardPreview = null;
@@ -157,5 +160,13 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
         }
 
         #endregion MonoBehaviour Implementation
+
+
+        public void ShowKeyboardStatus()
+        {
+#if WINDOWS_UWP
+            statusMessage.text = "Visible:" + wmrKeyboard.Visible.ToString();
+#endif
+        }
     }
 }
