@@ -559,6 +559,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
+    4: 
+    7: 
     14: DOTNETWINRT_PRESENT
   platformArchitecture:
     iOS: 1

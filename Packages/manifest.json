@@ -1,15 +1,15 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "MS Build for Unity",
-      "url": "https://pkgs.dev.azure.com/UnityDeveloperTools/MSBuildForUnity/_packaging/UnityDeveloperTools/npm/registry",
-      "scopes": [
-        "com.microsoft"
-      ]
-    }
-  ],
+    "scopedRegistries": [
+        {
+            "name": "MS Build for Unity",
+            "url": "https://pkgs.dev.azure.com/UnityDeveloperTools/MSBuildForUnity/_packaging/UnityDeveloperTools/npm/registry",
+            "scopes": [
+                "com.microsoft"
+            ]
+        }
+    ],
   "dependencies": {
-    "com.microsoft.msbuildforunity": "0.8.3",
+    "com.microsoft.msbuildforunity": "0.9.1-20200131.14",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "2.0.8",

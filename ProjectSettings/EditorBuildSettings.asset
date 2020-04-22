@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/MixedRealityKeyboardSample.unity
-    guid: 8db1a1bb5d3aff347bb1576311f018d8
+    path: Assets/App/Scenes/HandPose.unity
+    guid: 4eb49d0773d9356418810de4b0ae9834
   m_configObjects: {}

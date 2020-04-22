@@ -1,9 +1,21 @@
-<Project>
+<Project InitialTargets="_PropagateMSB4UProperties">
+  
+  <!-- These are specific to this Unity project and can't be overridden -->
   <PropertyGroup>
-    <MSBuildForUnityVersion>0.8.3</MSBuildForUnityVersion>
-    
-    <MSBuildForUnityGeneratedOutputDirectory>C:\MRTK\MRTK_HKSample\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
     <UnityProjectAssetsPath>C:\MRTK\MRTK_HKSample\Assets</UnityProjectAssetsPath>
+    
+    <_MSBuildForUnityGeneratedOutputDirectory>C:\MRTK\MRTK_HKSample\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
+    <MSBuildForUnityGeneratedProjectDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Projects</MSBuildForUnityGeneratedProjectDirectory>
+  </PropertyGroup>
+  
+  <!-- We set these common properties for current MSBuild and Unity project, unless we are being invoked from a different MSBuild and Unity project -->
+  <PropertyGroup Condition="'$(MSBuildForUnityVersion)'==''">
+    <MSBuildForUnityVersion>0.9.1</MSBuildForUnityVersion>
+    
+    <MSBuildForUnityPlatformPropsDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Projects</MSBuildForUnityPlatformPropsDirectory>
+    <MSBuildForUnityBuildOutputDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Output</MSBuildForUnityBuildOutputDirectory>
+    <MSBuildForUnityPublishDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Publish</MSBuildForUnityPublishDirectory>
+    
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
     <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
@@ -11,9 +23,30 @@
     
     <UnityMajorVersion>2019</UnityMajorVersion>
     <UnityMinorVersion>2</UnityMinorVersion>
+    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2019.2.21f1\Editor</UnityEditorInstallPath>
   </PropertyGroup>
   
+  <PropertyGroup>
+    <_MSB4UPropagateProperties>MSBuildForUnityVersion=$(MSBuildForUnityVersion);MSBuildForUnityPlatformPropsDirectory=$(MSBuildForUnityPlatformPropsDirectory);MSBuildForUnityBuildOutputDirectory=$(MSBuildForUnityBuildOutputDirectory);MSBuildForUnityPublishDirectory=$(MSBuildForUnityPublishDirectory);MSBuildForUnityDefaultOutputPath=$(MSBuildForUnityDefaultOutputPath);UnityCurrentPlatform=$(UnityCurrentPlatform);UnityCurrentTargetFramework=$(UnityCurrentTargetFramework);UnityMajorVersion=$(UnityMajorVersion);UnityMinorVersion=$(UnityMinorVersion);UnityEditorInstallPath=$(UnityEditorInstallPath)</_MSB4UPropagateProperties>
+  </PropertyGroup>
+  
+<!-- Disabling Clean; brief testing showed there wasn't any errors. If errors are encountered, this should be re-enabled.
   <Target Name="_RemoveOutputDirectory" AfterTargets="Clean">
-    <RemoveDir Directories="$(OutputPath)" />
+    <RemoveDir Directories="$(OutputPath)"/>
+  </Target>
+-->
+  
+  <Target Name="_PropagateMSB4UProperties">
+    <ItemGroup>
+      <ProjectReference>
+        <AdditionalProperties>UnityConfiguration=$(UnityConfiguration);UnityPlatform=$(UnityPlatform);$(_MSB4UPropagateProperties);$(AdditionalProperties)</AdditionalProperties>
+        <!-- Override Package/Project References to not have the default private assets-->
+        <PrivateAssets>analyzers</PrivateAssets>
+      </ProjectReference>
+      <PackageReference>
+        <!-- Override Package/Project References to not have the default private assets-->
+        <PrivateAssets>analyzers</PrivateAssets>
+      </PackageReference>
+    </ItemGroup>
   </Target>
 </Project>

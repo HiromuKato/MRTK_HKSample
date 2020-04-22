@@ -15,6 +15,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
     /// Note that like Unity's TouchScreenKeyboard API, this script only supports WSA, iOS,
     /// and Android.
     /// </remarks>
+    [AddComponentMenu("Scripts/MRTK/Examples/SystemKeyboardExample")]
     public class SystemKeyboardExample : MonoBehaviour
     {
 #if WINDOWS_UWP
@@ -25,9 +26,6 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
 
         [SerializeField]
         private TextMeshPro debugMessage = null;
-
-        [SerializeField]
-        private TextMeshPro statusMessage = null;
 
 #pragma warning disable 0414
         [SerializeField]
@@ -160,13 +158,5 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
         }
 
         #endregion MonoBehaviour Implementation
-
-
-        public void ShowKeyboardStatus()
-        {
-#if WINDOWS_UWP
-            statusMessage.text = "Visible:" + wmrKeyboard.Visible.ToString();
-#endif
-        }
     }
 }
