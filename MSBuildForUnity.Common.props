@@ -2,15 +2,15 @@
   <PropertyGroup>
     <MSBuildForUnityVersion>0.8.3</MSBuildForUnityVersion>
     
-    <MSBuildForUnityGeneratedOutputDirectory>C:\Users\hirom\Desktop\Git\MRTK_HKSample\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
-    <UnityProjectAssetsPath>C:\Users\hirom\Desktop\Git\MRTK_HKSample\Assets</UnityProjectAssetsPath>
+    <MSBuildForUnityGeneratedOutputDirectory>C:\MRTK\MRTK_HKSample\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
+    <UnityProjectAssetsPath>C:\MRTK\MRTK_HKSample\Assets</UnityProjectAssetsPath>
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
     <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
     <UnityCurrentTargetFramework>net46</UnityCurrentTargetFramework>
     
-    <UnityMajorVersion>2018</UnityMajorVersion>
-    <UnityMinorVersion>4</UnityMinorVersion>
+    <UnityMajorVersion>2019</UnityMajorVersion>
+    <UnityMinorVersion>2</UnityMinorVersion>
   </PropertyGroup>
   
   <Target Name="_RemoveOutputDirectory" AfterTargets="Clean">
