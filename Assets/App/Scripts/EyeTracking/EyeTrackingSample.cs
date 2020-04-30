@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit.Utilities;
 using UnityEngine;
 
 namespace MRTK_HKSample
@@ -11,11 +12,14 @@ namespace MRTK_HKSample
     /// </summary>
     public class EyeTrackingSample : MonoBehaviour
     {
-        [SerializeField] private Transform target;
+        [SerializeField]
+        private Transform target = default;
 
-        [SerializeField] private float defaultDistanceInMeters = 2;
+        [SerializeField] 
+        private float defaultDistanceInMeters = 2;
 
-        [SerializeField] private TextMesh label;
+        [SerializeField] 
+        private TextMesh label = default;
 
         private IMixedRealityEyeGazeProvider gazeProvider;
 
@@ -87,5 +91,45 @@ namespace MRTK_HKSample
 
             label.text += $"raycastValid : {gazeProvider.HitInfo.raycastValid}";
         }
+
+        /// <summary>
+        /// ハンドレイをOnにする
+        /// </summary>
+        public void HandRayOn()
+        {
+            PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOn);
+
+            // Restore default behavior for rays (on if not near something grabbable)
+            //PointerUtils.SetHandRayPointerBehavior(PointerBehavior.Default);
+        }
+
+        /// <summary>
+        /// ハンドレイをOffにする
+        /// </summary>
+        public void HandRayOff()
+        {
+            // Turn off all hand rays
+            PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
+
+            // Turn off hand rays for the right hand only
+            //PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff, Handedness.Right);
+        }
+
+        /// <summary>
+        /// ゲイズポインターをOnにする
+        /// </summary>
+        public void GazePointerOn()
+        {
+            PointerUtils.SetGazePointerBehavior(PointerBehavior.AlwaysOn);
+        }
+
+        /// <summary>
+        /// ゲイズポインターをOffにする
+        /// </summary>
+        public void GazePointerOff()
+        {
+            PointerUtils.SetGazePointerBehavior(PointerBehavior.AlwaysOff);
+        }
+
     }
 }
