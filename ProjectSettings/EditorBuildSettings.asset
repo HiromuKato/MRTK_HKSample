@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/EyeTrackingSample.unity
-    guid: 0c1635ac4d8e3eb45a748152bb5aa064
+    path: Assets/App/Scenes/GlobalInputSample.unity
+    guid: 7d555b14896d1f042b34db1083f9c1a4
   m_configObjects: {}
