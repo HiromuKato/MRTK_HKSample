@@ -12,10 +12,10 @@ namespace MRTK_HKSample
         private TouchScreenKeyboard keyboard;
 
         [SerializeField]
-        private TextMesh inputText;
+        private TextMesh inputText = default;
 
         [SerializeField]
-        private TextMesh debugText;
+        private TextMesh debugText = default;
 
         void Start()
         {

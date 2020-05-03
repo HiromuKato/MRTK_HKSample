@@ -12,10 +12,10 @@ namespace MRTK_HKSample
     public class HandPose : MonoBehaviour
     {
         [SerializeField]
-        private TextMesh posText;
+        private TextMesh posText = default;
 
         [SerializeField]
-        private TextMesh rotText;
+        private TextMesh rotText = default;
 
         void Start()
         {
