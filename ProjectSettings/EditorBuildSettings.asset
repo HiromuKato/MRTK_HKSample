@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/GlobalInputSample.unity
-    guid: 7d555b14896d1f042b34db1083f9c1a4
+    path: Assets/App/Scenes/MRCapabilitiesCheckSample.unity
+    guid: 791fd108c81b5ee4686c93d510849a48
   m_configObjects: {}
