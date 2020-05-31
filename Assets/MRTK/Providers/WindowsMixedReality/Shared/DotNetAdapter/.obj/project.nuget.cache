@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iXa+M2oLBzsFKXrEj/HfGpI9VVdvuZTYaT+khD4yURoRxa7n3H7UmbbHY3BVS5XOLyzjZUwbdPZvxQkG2RTW9w==",
+  "success": true,
+  "projectFilePath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hirom\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
+    "C:\\Users\\hirom\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

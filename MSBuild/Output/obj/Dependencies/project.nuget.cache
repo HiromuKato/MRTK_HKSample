@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pFZb/sQ3mjLUI2mHtxu74LByBWqgIzS1L6BPVvtUk8jKjtz9LOfsHtfI5Y5Y/UNl//iT63OQpZg+LF4jn2oISw==",
+  "dgSpecHash": "rBWeaPsxx2urKMwcJ/PQhGZvngFldDrQb1JbdbZLmbKiZeBQ5247j+4xkD7TJleMiolGUYWZhUmocpYBWuPv0g==",
   "success": true,
   "projectFilePath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK_HKSample.Dependencies.msb4u.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hirom\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1045\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1045.nupkg.sha512",
+    "C:\\Users\\hirom\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
     "C:\\Users\\hirom\\.nuget\\packages\\msbuildforunity\\0.9.1-123842\\msbuildforunity.0.9.1-123842.nupkg.sha512",
     "C:\\Users\\hirom\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
   ],

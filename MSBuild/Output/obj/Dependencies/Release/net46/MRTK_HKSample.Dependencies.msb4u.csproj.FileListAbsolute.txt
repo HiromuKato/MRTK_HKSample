@@ -1,3 +1,4 @@
+C:\MRTK\MRTK_HKSample\MSBuild\Output\obj\Dependencies\Release\net46\MRTK_HKSample.Dependencies.msb4u.csprojAssemblyReference.cache
 C:\MRTK\MRTK_HKSample\Assets\Dependencies\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
 C:\MRTK\MRTK_HKSample\Assets\Dependencies\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
 C:\MRTK\MRTK_HKSample\Assets\Dependencies\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs

@@ -1,0 +1,10 @@
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs.meta
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll.meta
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\Microsoft.Windows.MixedReality.DotNetWinRT.dll
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.bin\net46\System.Drawing.Primitives.dll
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csprojAssemblyReference.cache
+C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\.obj\Release\net46\DotNetAdapter.csproj.CopyComplete

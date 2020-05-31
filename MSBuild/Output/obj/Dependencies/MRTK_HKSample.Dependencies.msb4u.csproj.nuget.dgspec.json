@@ -4,14 +4,14 @@
     "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK_HKSample.Dependencies.msb4u.csproj": {}
   },
   "projects": {
-    "C:\\MRTK\\MRTK_HKSample\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
+    "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MRTK\\MRTK_HKSample\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectUniqueName": "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
         "projectName": "DotNetAdapter",
-        "projectPath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectPath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
         "packagesPath": "C:\\Users\\hirom\\.nuget\\packages\\",
-        "outputPath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\.obj\\",
+        "outputPath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\.obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -48,7 +48,7 @@
             "Microsoft.Windows.MixedReality.DotNetWinRT": {
               "suppressParent": "Analyzers",
               "target": "Package",
-              "version": "[0.5.1045, )"
+              "version": "[0.5.1049, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
@@ -85,8 +85,8 @@
         "frameworks": {
           "net46": {
             "projectReferences": {
-              "C:\\MRTK\\MRTK_HKSample\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
-                "projectPath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+              "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
+                "projectPath": "C:\\MRTK\\MRTK_HKSample\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
                 "privateAssets": "analyzers"
               }
             }

@@ -26,7 +26,7 @@
 
   <ItemGroup>
     <!--PROJECT_REFERENCE_TEMPLATE_START-->
-    <ProjectReference Include="C:\MRTK\MRTK_HKSample\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\Shared\DotNetAdapter\DotNetAdapter.csproj" Condition="">
+    <ProjectReference Include="C:\MRTK\MRTK_HKSample\Assets\MRTK\Providers\WindowsMixedReality\Shared\DotNetAdapter\DotNetAdapter.csproj" Condition="">
         <!--PRIVATE_REFERENCE_TEMPLATE_START--><!--PRIVATE_REFERENCE_TEMPLATE_END-->
     </ProjectReference>
     <!--PROJECT_REFERENCE_TEMPLATE_END-->

@@ -27,12 +27,14 @@ namespace MRTK_HKSample
         void Start()
         {
             gazeProvider = CoreServices.InputSystem.EyeGazeProvider;
+
+            CheckEyeGazeState();
         }
 
         public void CheckEyeGazeState()
         {
-            // True if user has selected to use eye tracking for gaze.
-            Debug.Log($"IsEyeGazeValid : {gazeProvider.IsEyeGazeValid}");
+            // If true, eye-based tracking will be used as gaze input when available.
+            Debug.Log($"IsEyeTrackingEnabled : {gazeProvider.IsEyeTrackingEnabled}");
 
             // Indicates whether the user's eye tracking calibration is valid or not.
             Debug.Log($"IsEyeCalibrationValid : {gazeProvider.IsEyeCalibrationValid}");
@@ -41,28 +43,29 @@ namespace MRTK_HKSample
         // Update is called once per frame
         void Update()
         {
-            if (!gazeProvider.IsEyeGazeValid)
+            label.text = "";
+            if (!gazeProvider.IsEyeTrackingEnabled)
             {
-                label.text = $"IsEyeGazeValid : {gazeProvider.IsEyeGazeValid}";
-                return;
+                label.text = $"IsEyeTrackingEnabled : {gazeProvider.IsEyeTrackingEnabled}\n";
+                //return;
             }
 
             if (gazeProvider.IsEyeCalibrationValid == null)
             {
-                label.text = $"IsEyeCalibrationValid : null";
-                return;
+                label.text += $"IsEyeCalibrationValid : null\n";
+                //return;
             }
 
             if (!(bool) gazeProvider.IsEyeCalibrationValid)
             {
-                label.text = $"IsEyeCalibrationValid : {(bool) gazeProvider.IsEyeCalibrationValid}";
-                return;
+                label.text += $"IsEyeCalibrationValid : {(bool) gazeProvider.IsEyeCalibrationValid}\n";
+                //return;
             }
 
             // Origin of the gaze ray.
             // Please note that this will return the head gaze origin if 'IsEyeGazeValid' is false.
             Debug.Log($"GazeOrigin : {gazeProvider.GazeOrigin}");
-            label.text = $"GazeOrigin : {gazeProvider.GazeOrigin}\n";
+            label.text += $"GazeOrigin : {gazeProvider.GazeOrigin}\n";
 
             // Direction of the gaze ray.
             // This will return the head gaze direction if 'IsEyeGazeValid' is false.
@@ -73,7 +76,7 @@ namespace MRTK_HKSample
             // this will be based on the user's head gaze.
             var hitInfo = gazeProvider.HitInfo;
             var hitPosition = gazeProvider.HitPosition;
-            label.text += $"HitPosition : ({hitPosition.x}, {hitPosition.y}, {hitPosition.z})";
+            label.text += $"HitPosition : ({hitPosition.x}, {hitPosition.y}, {hitPosition.z})\n";
             var hitNormal = gazeProvider.HitNormal;
 
             if (gazeProvider.HitInfo.raycastValid)
