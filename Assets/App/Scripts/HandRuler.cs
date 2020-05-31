@@ -17,19 +17,11 @@ namespace MRTK_HKSample
         [SerializeField]
         private LineRenderer line = default;
 
-        private IMixedRealityInputSystem inputSystem = null;
         private IMixedRealityHandJointService handJointService = null;
         private IMixedRealityDataProviderAccess dataProviderAccess = null;
 
         void Start()
         {
-            inputSystem = CoreServices.InputSystem;
-            if (inputSystem == null)
-            {
-                Debug.LogError("Can't get InputSystem.");
-                return;
-            }
-
             handJointService = CoreServices.GetInputSystemDataProvider<IMixedRealityHandJointService>();
             if (handJointService == null)
             {
@@ -43,6 +35,9 @@ namespace MRTK_HKSample
                 Debug.LogError("Can't get IMixedRealityDataProviderAccess.");
                 return;
             }
+
+            // ハンドレイを非表示にする
+            PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
         }
 
         void Update()
