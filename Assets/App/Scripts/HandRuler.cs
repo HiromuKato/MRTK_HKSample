@@ -47,36 +47,34 @@ namespace MRTK_HKSample
 
         void Update()
         {
-            handJointService = dataProviderAccess.GetDataProvider<IMixedRealityHandJointService>();
-            if (handJointService != null)
+            // 左手
+            var leftIndexTip = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Left);
+            if (leftIndexTip == null)
             {
-                // 左手
-                Transform leftIndexTip = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Left);
-                if (leftIndexTip == null)
-                {
-                    Debug.Log("leftIndexTip is null.");
-                }
-
-                // 右手
-                Transform rightIndexTip = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Right);
-                if (rightIndexTip == null)
-                {
-                    Debug.Log("rightIndexTip is null.");
-                }
-
-                // 線を描画
-                line.SetPosition(0, leftIndexTip.position);
-                line.SetPosition(1, rightIndexTip.position);
-                line.startWidth = 0.001f;
-                line.endWidth = 0.001f;
-
-                // 距離を算出
-                var distance = Vector3.Distance(leftIndexTip.position, rightIndexTip.position);
-                // cmに変換
-                distance = distance * 100;
-                DistanceText.text = distance.ToString("0.0") + " cm" ;
-                DistanceText.transform.position = (leftIndexTip.position + rightIndexTip.position) / 2;
+                Debug.Log("leftIndexTip is null.");
+                return;
             }
+
+            // 右手
+            var rightIndexTip = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Right);
+            if (rightIndexTip == null)
+            {
+                Debug.Log("rightIndexTip is null.");
+                return;
+            }
+
+            // 線を描画
+            line.SetPosition(0, leftIndexTip.position);
+            line.SetPosition(1, rightIndexTip.position);
+            line.startWidth = 0.001f;
+            line.endWidth = 0.001f;
+
+            // 距離を算出
+            var distance = Vector3.Distance(leftIndexTip.position, rightIndexTip.position);
+            // cmに変換
+            distance = distance * 100;
+            DistanceText.text = distance.ToString("0.0") + " cm";
+            DistanceText.transform.position = (leftIndexTip.position + rightIndexTip.position) / 2;
         }
     }
 }
