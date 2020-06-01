@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/HandRuler.unity
-    guid: a1c6502767150b845b6f2a567248df93
+    path: Assets/App/Scenes/HandProtractor.unity
+    guid: 97061ee71f04202428f274a56ba44396
   m_configObjects: {}
