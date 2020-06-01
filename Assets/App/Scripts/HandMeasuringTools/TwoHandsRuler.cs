@@ -9,7 +9,7 @@ namespace MRTK_HKSample
     /// ハンド定規
     /// 参考動画：https://twitter.com/hi_rom_/status/1267100537578639363
     /// </summary>
-    public class HandRuler : MonoBehaviour
+    public class TwoHandsRuler : MonoBehaviour
     {
         [SerializeField]
         private TextMesh DistanceText = default;
@@ -37,7 +37,16 @@ namespace MRTK_HKSample
             }
 
             // ハンドレイを非表示にする
-            PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
+            //PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
+
+            Initialize();
+        }
+
+        public void Initialize()
+        {
+            line.SetPosition(0, Vector3.zero);
+            line.SetPosition(1, Vector3.zero);
+            DistanceText.text = "0 cm";
         }
 
         void Update()

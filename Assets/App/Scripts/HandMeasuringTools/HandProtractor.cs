@@ -13,7 +13,10 @@ namespace MRTK_HKSample
     public class HandProtractor : MonoBehaviour
     {
         [SerializeField]
-        private TextMesh DegreeText = default;
+        private TextMesh leftDegreeText = default;
+
+        [SerializeField]
+        private TextMesh rightDegreeText = default;
 
         [SerializeField]
         private List<LineRenderer> lines = new List<LineRenderer>(4);
@@ -38,11 +41,31 @@ namespace MRTK_HKSample
             }
 
             // ハンドレイを非表示にする
-            PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
+            //PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
+
+            Initialize();
+        }
+
+        public void Initialize()
+        {
+            foreach (var line in lines)
+            {
+                line.SetPosition(0, Vector3.zero);
+                line.SetPosition(1, Vector3.zero);
+            }
+            leftDegreeText.text = "0 degree";
+            rightDegreeText.text = "0 degree";
         }
 
         void Update()
         {
+            // 線の太さ
+            foreach (var line in lines)
+            {
+                line.startWidth = 0.001f;
+                line.endWidth = 0.001f;
+            }
+
             // 左手 人差し指
             var leftIndexTip = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Left);
             if (leftIndexTip == null)
@@ -80,7 +103,8 @@ namespace MRTK_HKSample
             var v1 = p1 - p0;
             var v2 = p2 - p0;
             var angleLeft = Vector3.Angle(v2, v1);
-            DegreeText.text = "L: " + angleLeft.ToString("0.0") + " degree\n";
+            leftDegreeText.text = angleLeft.ToString("0.0") + " degree";
+            leftDegreeText.transform.position = (leftIndexTip.position + leftThumbTip.position) / 2;
 
             // 右手 人差し指
             var rightIndexTip = handJointService.RequestJointTransform(TrackedHandJoint.IndexTip, Handedness.Right);
@@ -119,9 +143,8 @@ namespace MRTK_HKSample
             v1 = p1 - p0;
             v2 = p2 - p0;
             var angleRight = Vector3.Angle(v2, v1);
-            DegreeText.text += "R: " +  angleRight.ToString("0.0") + " degree";
-
-            DegreeText.transform.position = (leftIndexTip.position + rightIndexTip.position) / 2;
+            rightDegreeText.text = angleRight.ToString("0.0") + " degree";
+            rightDegreeText.transform.position = (rightIndexTip.position + rightThumbTip.position) / 2;
         }
     }
 }

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/HandProtractor.unity
-    guid: 97061ee71f04202428f274a56ba44396
+    path: Assets/App/Scenes/HandMeasuringTools/HandMeasuringTools.unity
+    guid: c53699c48fc6bac439ace9f0c773183c
   m_configObjects: {}
