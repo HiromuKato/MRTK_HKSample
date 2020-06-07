@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/UnityUIScrollSample.unity
-    guid: 86667cc29d522964389e1754112d6e64
+    path: Assets/App/Scenes/HandPhotoCapture.unity
+    guid: ee8c0cb21ed95ce48b0ec39c72a93bc3
   m_configObjects: {}
