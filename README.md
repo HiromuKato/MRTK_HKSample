@@ -38,3 +38,6 @@
 
 - WorldAnchorSample
   - ワールドアンカーの動作確認用サンプル
+
+- XboxControllerSample
+  - Xboxコントローラーのすべての入力を個別に判別するサンプル
