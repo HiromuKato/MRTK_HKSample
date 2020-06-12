@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Scenes/XboxControllerSample.unity
-    guid: a855665fd0e291e4aa6e6fcfb857ee7f
+    path: Assets/Apps/HoloSquat/Scenes/HoloSquat.unity
+    guid: 25b24fab4322fdc4faf1b958435e57bd
   m_configObjects: {}
